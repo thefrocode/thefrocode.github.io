@@ -29,9 +29,8 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-.underlined {
+.underlined, .hero__underlined {
   position: relative;
-  margin-right: 1rem;
 }
 .underlined:after {
   content: "";
@@ -44,3 +43,7 @@ p, h1, h2, h3, h4, h5, h6 {
   border-color: #000 transparent transparent transparent;
   border-radius: 50%;
 }
+
+
+
+

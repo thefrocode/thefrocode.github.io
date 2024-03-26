@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      lineHeight: {
+        "leading-11": "line-height: 2.5rem",
+        "leading-12": "line-height: 3rem",
+        "leading-13": "line-height: 3.25rem",
+        "leading-14": "line-height: 3.5rem",
+      },
     },
   },
   plugins: [],
