@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div className="flex flex-col gap-10 p-24 text-center">
       <p className={`${montserrat.className} text-2xl`}>
-        Hi, I'm Christine Mukiri
+        Hi, I&apos;m Christine Mukiri
       </p>
       <p className={`${montserrat.className} text-5xl font-medium leading-14`}>
         a{" "}
