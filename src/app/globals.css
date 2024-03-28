@@ -44,6 +44,26 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 
+/**
+Tech Stack Section
+*/
+.logo_grid div:nth-child(7n) {
+    border-right: none;
+}
+.logo_grid div:nth-child(28) ~ div {
+  border-bottom: none;
+}
 
+.logo-cell {
+  position: relative;
+}
 
+.logo-cell:after {
+  content: '';
+  width: 0.5px;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  background-color: #fff; 
+}
 
