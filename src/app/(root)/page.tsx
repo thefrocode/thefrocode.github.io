@@ -1,4 +1,3 @@
-"use client";
 import Hero from "./components/hero";
 import TechStack from "./components/stack";
 
