@@ -199,7 +199,6 @@ export default function TechStack() {
           }`}
             key={index}
           >
-            {/* <i className={`text-5xl bi bi-${item}`}></i> */}
             {item.item && (
               <div
                 className="image-container"

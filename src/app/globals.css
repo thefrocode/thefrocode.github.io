@@ -153,3 +153,36 @@ Tech Stack Section
 }
 
 
+/** 
+  *  Work Experience Section
+  */
+
+.work-experience__container {
+  position: relative;
+}
+
+.work-experience__second{
+  top: 25%;
+}
+.work-experience__third{
+  top: 50%;
+}
+.work-experience__fourth{
+  top: 75%;
+}
+
+.work-experience__vertical-line {
+  position: absolute;
+  left: 50%; /* Adjust as needed */
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid white;
+}
+.work-experience__left {
+  position: absolute;
+  right: 50%;
+}
+.work-experience__right {
+  position: absolute;
+  left: 50%;
+}
