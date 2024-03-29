@@ -63,7 +63,93 @@ Tech Stack Section
   width: 0.5px;
   position: absolute;
   right: 0;
-  bottom:0;
   background-color: #fff; 
 }
+
+.logo-cell-top:after{
+  bottom: 0;
+}
+.logo-cell-bottom:after{
+  top: 0;
+}
+.logo-cell-10::after{
+  height: 10%
+}
+.logo-cell-20::after{
+  height: 20%
+}
+.logo-cell-30::after{
+  height: 30%
+}
+.logo-cell-40::after{
+  height: 40%
+}
+.logo-cell-50::after{
+  height: 50%
+}
+.logo-cell-60::after{
+  height: 60%
+}
+.logo-cell-side{
+  position: relative;
+}
+.logo-cell-side:after{
+  content: '';
+  height: 0.5px;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff; 
+}
+
+.logo-cell-side-left:after{
+  right: 0;
+}
+.logo-cell-side-right:after{
+  left: 0;
+}
+
+.logo-cell-side-10::after{
+  width: 10%
+}
+.logo-cell-side-20::after{
+  width: 20%
+}
+.logo-cell-side-30::after{
+  width: 30%
+}
+.logo-cell-side-40::after{
+  width: 40%
+}
+.logo-cell-side-50::after{
+  width: 50%
+}
+.logo-cell-side-60::after{
+  width: 60%
+}
+.logo-cell-side-100::after{
+  width: 100%
+}
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensure inline display to show tooltip properly */
+}
+
+.image-container:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent line breaks in the tooltip */
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.1s linear;
+}
+
 
