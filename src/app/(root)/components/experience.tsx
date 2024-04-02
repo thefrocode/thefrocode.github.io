@@ -13,7 +13,7 @@ export default function Experience() {
         </h2>
         <hr className="flex-grow" />
       </div>
-      <div className="work-experience__container mt-20 h-[450px]">
+      <div className="work-experience__container my-20 h-[450px]">
         <div className="work-experience__vertical-line"></div>
         <div className="work-experience__right -ml-[120px]">
           <div className="flex gap-8 items-center">
@@ -56,10 +56,13 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-24">
-        <div className="flex">Cherehani Africa1</div>
-        <div className="flex">Cherehani Africa2</div>
-        <div className="flex">Cherehani Africa3</div>
+      <div className="flex flex-col justify-center items-center bg-white gap pb-2 text-white">
+        <p
+          className={`${deliusUnicase.className} px-6 pb-2 text-2xl bg-black -mt-4 rounded-b-3xl`}
+        >
+          PROJECTS
+        </p>
+        <i className="bi bi-files text-2xl bg-black px-6 pb-2 rounded-b-xl"></i>
       </div>
     </div>
   );

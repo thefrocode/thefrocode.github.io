@@ -9,7 +9,7 @@ const deliusUnicase = Delius_Unicase({
 });
 export default function Hero() {
   return (
-    <div className="flex flex-col gap-10 p-24 text-center">
+    <div className="flex flex-col gap-10 p-20 text-center mb-14">
       <p className={`${montserrat.className} text-2xl`}>
         Hi, I&apos;m Christine Mukiri
       </p>
