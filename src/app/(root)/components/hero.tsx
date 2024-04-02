@@ -9,7 +9,7 @@ const deliusUnicase = Delius_Unicase({
 });
 export default function Hero() {
   return (
-    <div className="flex flex-col gap-10 p-20 text-center mb-14">
+    <div id="home" className="flex flex-col gap-10 p-20 text-center mb-14">
       <p className={`${montserrat.className} text-2xl`}>
         Hi, I&apos;m Christine Mukiri
       </p>
@@ -22,7 +22,7 @@ export default function Hero() {
         </span>{" "}
         software <br /> developer
       </p>
-      <p className={`${montserrat.className} w-2/3 self-center`}>
+      <p id="stack" className={`${montserrat.className} w-2/3 self-center`}>
         I work with people all over the world to create tailor-made Webflow
         experiences.I work with people all over the world to create tailor-made
         Webflow experiences.

@@ -133,6 +133,7 @@ export default function TechStack() {
       item: "tailwind",
       class: "logo-cell logo-cell-bottom logo-cell-50",
       alignment: "items-start",
+      id: "experience",
     },
     {
       item: "",
@@ -171,6 +172,7 @@ export default function TechStack() {
               <div
                 className="image-container"
                 title={item.item.toLocaleUpperCase()}
+                id={item.id}
               >
                 <Image
                   src={`/icons/${item.item}.svg`}

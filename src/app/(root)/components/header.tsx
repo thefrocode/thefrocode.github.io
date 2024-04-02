@@ -1,3 +1,4 @@
+"use client";
 import { Montserrat, Delius_Unicase } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -9,6 +10,12 @@ const deliusUnicase = Delius_Unicase({
   weight: ["400", "700"],
 });
 export default function Header() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className="w-full py-5 sticky top-0 z-50 bg-white">
       <nav className="flex justify-between px-32 items-center">
@@ -21,10 +28,22 @@ export default function Header() {
         <ul
           className={`flex justify-center gap-12 ${montserrat.className} font-medium text-lg`}
         >
-          <li>HOME</li>
-          <li>STACK</li>
-          <li>EXPERIENCE</li>
-          <li>PROJECTS</li>
+          <li>
+            <button onClick={() => scrollToSection("home")}>HOME</button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection("stack")}>STACK</button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection("experience")}>
+              EXPERIENCE
+            </button>
+          </li>
+          <li>
+            <button onClick={() => scrollToSection("projects")}>
+              PROJECTS
+            </button>
+          </li>
         </ul>
       </nav>
     </header>

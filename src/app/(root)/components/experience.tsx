@@ -45,7 +45,10 @@ export default function Experience() {
             </p>
           </div>
         </div>
-        <div className="work-experience__left -mr-[120px] work-experience__fourth">
+        <div
+          id="projects"
+          className="work-experience__left -mr-[120px] work-experience__fourth"
+        >
           <div className="flex flex-row-reverse gap-8 justify-end items-center">
             <p className="text-white w-[80px]">Sept 2024</p>
             <i className="bi bi-record-circle text-white"></i>
