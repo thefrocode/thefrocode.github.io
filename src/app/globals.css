@@ -29,8 +29,9 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-.underlined, .hero__underlined {
+.underlined {
   position: relative;
+  z-index: -1;
 }
 .underlined:after {
   content: "";
@@ -56,6 +57,7 @@ Tech Stack Section
 
 .logo-cell {
   position: relative;
+  z-index: 49;
 }
 
 .logo-cell:after {
@@ -159,6 +161,7 @@ Tech Stack Section
 
 .work-experience__container {
   position: relative;
+  z-index: 49;
 }
 
 .work-experience__second{
@@ -191,13 +194,6 @@ Tech Stack Section
 /**
 Projects Section
 */
-.embla {  overflow: hidden;}
-.embla__viewport {
-  overflow: hidden;
-}
-.embla__container {  display: flex;}
-.embla__slide {  flex: 0 0 30%;  min-width: 0;}
-
 
 .embla {
  

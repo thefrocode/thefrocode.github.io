@@ -10,7 +10,7 @@ const deliusUnicase = Delius_Unicase({
 });
 export default function Header() {
   return (
-    <header className="w-full py-5 sticky top-0 z-50">
+    <header className="w-full py-5 sticky top-0 z-50 bg-white">
       <nav className="flex justify-between px-32 items-center">
         <span
           className={`${deliusUnicase.className} font-bold text-2xl underlined`}

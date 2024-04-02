@@ -157,10 +157,11 @@ export default function TechStack() {
           TECH STACK
         </p>
       </div>
+
       <div className="grid grid-cols-7 grid-rows-5 logo_grid">
         {items?.map((item, index) => (
           <div
-            className={`w-32 h-28 text-white flex justify-center
+            className={`w-32 h-28 text-white flex justify-center 
             ${item.class != "" ? item.class : "border-r border-b"}
             ${item.alignment ? item.alignment : "items-center"}
           }`}

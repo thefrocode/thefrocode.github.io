@@ -16,7 +16,7 @@ export default function Hero() {
       <p className={`${montserrat.className} text-5xl font-medium leading-14`}>
         a{" "}
         <span
-          className={`${deliusUnicase.className} underlined text-5xl font-bold bg-gradient-to-r from-[#AD9DB0] to-[#5D4B66] text-transparent bg-clip-text`}
+          className={`${deliusUnicase.className} underlined text-5xl z-0 font-bold bg-gradient-to-r from-[#AD9DB0] to-[#5D4B66] text-transparent bg-clip-text`}
         >
           full-stack
         </span>{" "}
