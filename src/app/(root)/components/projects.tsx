@@ -115,7 +115,7 @@ export default function Projects() {
     <div id="projects" className="embla flex mx-16 my-10 gap-8">
       <button className="embla__prev w-1/6">
         <i className="bi bi-chevron-left text-3xl" onClick={scrollPrev}></i>
-      </button>{" "}
+      </button>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {projects.map((project, index) => (

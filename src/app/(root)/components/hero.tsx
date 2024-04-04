@@ -14,12 +14,12 @@ export default function Hero() {
         Hi, I&apos;m Christine Mukiri
       </p>
       <p className={`${montserrat.className} text-5xl font-medium leading-14`}>
-        a{" "}
+        a
         <span
           className={`${deliusUnicase.className} underlined text-5xl z-0 font-bold bg-gradient-to-r from-[#AD9DB0] to-[#5D4B66] text-transparent bg-clip-text`}
         >
           full-stack
-        </span>{" "}
+        </span>
         software <br /> developer
       </p>
       <p id="stack" className={`${montserrat.className} w-2/3 self-center`}>

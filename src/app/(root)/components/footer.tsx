@@ -12,7 +12,7 @@ export default function Footer() {
         <p className="mr-10">
           Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska.
           Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning, och
-          pesask vyfisat. Viktiga poddradio har un mad och inde.{" "}
+          pesask vyfisat. Viktiga poddradio har un mad och inde.
         </p>
         <div className="flex gap-4">
           <a
