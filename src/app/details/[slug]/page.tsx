@@ -80,7 +80,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </p>
         </div>
       </div>
-      <hr className="w-full border border-black" />
+      <hr className="w-full border border-gray-200" />
       <div className="w-3/4 f">
         <p className="font-semibold text-2xl my-8">DESCRIPTION</p>
         {page.project_paragraphs.map((paragraph, index) => (
