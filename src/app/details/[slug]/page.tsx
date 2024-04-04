@@ -45,8 +45,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const page = pages[params.slug];
   return (
     <div className="flex flex-col justify-center items-center mb-10">
-      <p>{params.slug}</p>
-      {/* <div className="flex my-10 w-3/4">
+      <div className="flex my-10 w-3/4">
         <div className="flex justify-center items-center w-1/3">
           <Image
             src={`/images/${params.slug}.png`}
@@ -89,7 +88,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             {paragraph}
           </p>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
