@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Delius_Unicase } from "next/font/google";
+import Link from "next/link";
 const deliusUnicase = Delius_Unicase({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -134,11 +135,12 @@ export default function Projects() {
                 >
                   {project.description}
                 </p>
-                <button
+                <Link
+                  href={`details/${project.url}`}
                   className={`${deliusUnicase.className} text-sm font-bold border-2 border-white rounded-md px-4 py-2`}
                 >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           ))}
