@@ -15,47 +15,47 @@ export default function Experience() {
         </h2>
         <hr className="flex-grow" />
       </div>
-      <div className="work-experience__container my-20 h-[450px] mx-8 md:mx-0">
+      <div className="work-experience__container my-20 h-[450px]  ">
         <div className="work-experience__vertical-line"></div>
-        <div className="work-experience__right -ml-[92px] md:-ml-[120px]">
-          <div className="flex gap-8 items-center">
+        <div className="work-experience__right -ml-[104px] md:-ml-[120px]">
+          <div className="flex gap-4 md:gap-8 items-center">
             <p className="text-white w-[80px] self-center">Sept 2023</p>
             <i className="bi bi-record-circle text-white"></i>
-            <hr className="w-[40px] md:w-[60px]" />
-            <p className="border-2 border-white text-sm md:text-base text-white px-2 py-4 rounded-lg -ml-8">
+            <hr className="w-[20px] md:w-[60px]" />
+            <p className="w-[120px] md:w-[210px] border-2 border-white text-sm md:text-base text-white text-center py-4 rounded-lg -ml-4 md:-ml-8">
               Started at Cherehani Africa
             </p>
           </div>
         </div>
-        <div className="work-experience__left -mr-[88px] md:-mr-[120px] work-experience__second">
-          <div className="flex flex-row-reverse gap-8 justify-end items-center">
+        <div className="work-experience__left -mr-[104px] md:-mr-[120px] work-experience__second">
+          <div className="flex flex-row-reverse gap-4 md:gap-8 justify-end items-center">
             <p className="text-white w-[80px]">Sept 2024</p>
             <i className="bi bi-record-circle text-white"></i>
-            <hr className="w-[40px] md:w-[60px]" />
-            <p className="border-2 border-white  text-sm md:text-base text-white px-2 py-4 rounded-lg -mr-8">
+            <hr className="w-[20px] md:w-[60px]" />
+            <p className="w-[120px] md:w-[210px] border-2 border-white  text-sm md:text-base text-white text-center py-4 rounded-lg -mr-4 md:-mr-8">
               Started at Cherehani Africa
             </p>
           </div>
         </div>
-        <div className="work-experience__right -ml-[92px] md:-ml-[120px] work-experience__third">
-          <div className="flex gap-8 items-center">
+        <div className="work-experience__right -ml-[104px] md:-ml-[120px] work-experience__third">
+          <div className="flex gap-4 md:gap-8 items-center">
             <p className="text-white w-[80px] self-center">Sept 2023</p>
             <i className="bi bi-record-circle text-white"></i>
-            <hr className="w-[40px] md:w-[60px]" />
-            <p className="border-2 border-white text-sm md:text-base text-white px-2 py-4 rounded-lg -ml-8">
+            <hr className="w-[20px] md:w-[60px]" />
+            <p className="w-[120px] md:w-[210px] border-2 border-white text-sm md:text-base text-white text-center py-4 rounded-lg -ml-4 md:-ml-8">
               Started at Cherehani Africa
             </p>
           </div>
         </div>
         <div
           id="projects"
-          className="work-experience__left -mr-[88px] md:-mr-[120px] work-experience__fourth"
+          className="work-experience__left -mr-[104px] md:-mr-[120px] work-experience__fourth"
         >
-          <div className="flex flex-row-reverse gap-8 justify-end items-center">
+          <div className="flex flex-row-reverse gap-4 md:gap-8 justify-end items-center">
             <p className="text-white w-[80px]">Sept 2024</p>
             <i className="bi bi-record-circle text-white"></i>
-            <hr className="w-[40px] md:w-[60px]" />
-            <p className="border-2 border-white text-sm md:text-base text-white px-2 py-4 rounded-lg -mr-8">
+            <hr className="w-[20px] md:w-[60px]" />
+            <p className="w-[120px] md:w-[210px] border-2 border-white text-sm md:text-base text-white text-center py-4 rounded-lg -mr-4 md:-mr-8">
               Started at Cherehani Africa
             </p>
           </div>
