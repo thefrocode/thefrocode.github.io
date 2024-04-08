@@ -46,6 +46,33 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /**
+Header Section
+*/
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-toggle + ul {
+    display: none;
+  }
+  .nav-toggle.active + ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+  }
+}
+/**
 Tech Stack Section
 */
 .logo_grid div:nth-child(7n) {
