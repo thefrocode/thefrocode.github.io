@@ -9,22 +9,30 @@ const deliusUnicase = Delius_Unicase({
 });
 export default function Hero() {
   return (
-    <div id="home" className="flex flex-col gap-10 p-20 text-center mb-14">
+    <div
+      id="home"
+      className="flex flex-col gap-10 p-6 md:p-20 text-center mb-14"
+    >
       <p className={`${montserrat.className} text-2xl`}>
         Hi, I&apos;m Christine Mukiri
       </p>
-      <p className={`${montserrat.className} text-5xl font-medium leading-14`}>
-        a
+      <p
+        className={`${montserrat.className} text-3xl md:text-5xl font-medium leading-10 md:leading-14 gap-2`}
+      >
+        a{" "}
         <span
-          className={`${deliusUnicase.className} underlined text-5xl z-0 font-bold bg-gradient-to-r from-[#AD9DB0] to-[#5D4B66] text-transparent bg-clip-text`}
+          className={`${deliusUnicase.className} underlined text-3xl md:text-5xl z-0 font-bold bg-gradient-to-r from-[#AD9DB0] to-[#5D4B66] text-transparent bg-clip-text`}
         >
           full-stack
-        </span>
+        </span>{" "}
         software <br /> developer
       </p>
-      <p id="stack" className={`${montserrat.className} w-2/3 self-center`}>
+      <p
+        id="stack"
+        className={`${montserrat.className} w-3/4 text-sm md:text-base self-center`}
+      >
         I work with people all over the world to create tailor-made Webflow
-        experiences.I work with people all over the world to create tailor-made
+        experiences. I work with people all over the world to create tailor-made
         Webflow experiences.
       </p>
     </div>

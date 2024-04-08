@@ -50,28 +50,7 @@ Header Section
 */
 
 /* For smaller screens */
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-  .nav-toggle {
-    display: block;
-  }
-  .nav-toggle + ul {
-    display: none;
-  }
-  .nav-toggle.active + ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-  }
-}
+
 
 z--1{
   z-index: -1;
