@@ -45,8 +45,8 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <div className="w-full pt-5 pb-2 sticky top-0 z-50 bg-white flex justify-between md:gap-16 px-4 md:px-32 items-center">
+    <header className="w-full pt-5 pb-2 sticky top-0 z-50 bg-white">
+      <div className="flex justify-between md:gap-16 px-4 md:px-32 items-center">
         <span
           className={`${deliusUnicase.className} font-bold text-2xl underlined w-[200px] text-nowrap`}
         >
@@ -83,7 +83,7 @@ export default function Header() {
       </div>
       {isMenuOpen && (
         <ul
-          className={`absolute right-0 md:hidden px-4 rounded-lg shadow-md py-2 mr-2 gap-6 ${montserrat.className} text-md normal-case`}
+          className={`absolute z--1 flex flex-col bg-white right-0 md:hidden px-4 rounded-lg shadow-md py-2 mr-2 gap-4  ${montserrat.className} text-md `}
         >
           <Links />
         </ul>
