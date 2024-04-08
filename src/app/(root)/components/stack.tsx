@@ -149,7 +149,7 @@ export default function TechStack() {
     },
   ];
   return (
-    <div className="bg-black w-full flex flex-col justify-between items-center h-[350px] md:h-[700px] text-white">
+    <div className="bg-black w-full flex flex-col justify-between items-center h-[330px] md:h-[700px] text-white">
       <div className="flex flex-col justify-center items-center bg-white rounded-3xl gap pt-2 -mt-14 md:-mt-16">
         <i className="bi bi-tools md:text-2xl bg-black px-6 pt-2 rounded-t-xl"></i>
         <p
@@ -162,7 +162,7 @@ export default function TechStack() {
       <div className="grid grid-cols-7 grid-rows-5 logo_grid">
         {items?.map((item, index) => (
           <div
-            className={`md:w-32 md:h-28 w-10 h-12 text-white flex justify-center 
+            className={`md:w-32 md:h-28 w-12 h-12 text-white flex justify-center 
           ${item.class != "" ? item.class : "border-r border-b"}
           ${item.alignment ? item.alignment : "items-center"}
           `}
