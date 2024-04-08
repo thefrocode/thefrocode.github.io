@@ -149,11 +149,11 @@ export default function TechStack() {
     },
   ];
   return (
-    <div className="bg-black w-full flex flex-col justify-between items-center h-[700px] text-white">
-      <div className="flex flex-col justify-center items-center bg-white rounded-3xl gap pt-2 -mt-16">
-        <i className="bi bi-tools text-2xl bg-black px-6 pt-2 rounded-t-xl"></i>
+    <div className="bg-black w-full flex flex-col justify-between items-center h-[350px] md:h-[700px] text-white">
+      <div className="flex flex-col justify-center items-center bg-white rounded-3xl gap pt-2 -mt-14 md:-mt-16">
+        <i className="bi bi-tools md:text-2xl bg-black px-6 pt-2 rounded-t-xl"></i>
         <p
-          className={`${deliusUnicase.className} px-6 pt-2 text-2xl bg-black rounded-3xl`}
+          className={`${deliusUnicase.className} px-6 pt-2 md:text-2xl bg-black rounded-3xl`}
         >
           TECH STACK
         </p>
@@ -162,10 +162,10 @@ export default function TechStack() {
       <div className="grid grid-cols-7 grid-rows-5 logo_grid">
         {items?.map((item, index) => (
           <div
-            className={`w-32 h-28 text-white flex justify-center 
-            ${item.class != "" ? item.class : "border-r border-b"}
-            ${item.alignment ? item.alignment : "items-center"}
-          }`}
+            className={`md:w-32 md:h-28 w-10 h-12 text-white flex justify-center 
+          ${item.class != "" ? item.class : "border-r border-b"}
+          ${item.alignment ? item.alignment : "items-center"}
+          `}
             key={index}
           >
             {item.item && (
@@ -177,8 +177,10 @@ export default function TechStack() {
                 <Image
                   src={`/icons/${item.item}.svg`}
                   alt={item.item}
+                  layout="responsive"
                   width={70}
                   height={70}
+                  className="p-2"
                 />
               </div>
             )}

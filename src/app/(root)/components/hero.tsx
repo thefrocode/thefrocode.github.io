@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="flex flex-col gap-10 px-4 py-16 md:p-20 text-center mb-14"
+      className="flex flex-col gap-10 px-6 py-16 md:p-20 text-center mb-14"
     >
       <p className={`${montserrat.className} text-lg md:text-2xl`}>
         Hi, I&apos;m Christine Mukiri
@@ -29,7 +29,7 @@ export default function Hero() {
       </p>
       <p
         id="stack"
-        className={`${montserrat.className} w-3/4 text-sm md:text-base self-center`}
+        className={`${montserrat.className} md:w-3/4 text-sm md:text-base self-center`}
       >
         I work with people all over the world to create tailor-made Webflow
         experiences. I work with people all over the world to create tailor-made
