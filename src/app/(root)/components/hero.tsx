@@ -11,9 +11,9 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="flex flex-col gap-10 p-6 md:p-20 text-center mb-14"
+      className="flex flex-col gap-10 px-4 py-16 md:p-20 text-center mb-14"
     >
-      <p className={`${montserrat.className} text-2xl`}>
+      <p className={`${montserrat.className} text-lg md:text-2xl`}>
         Hi, I&apos;m Christine Mukiri
       </p>
       <p

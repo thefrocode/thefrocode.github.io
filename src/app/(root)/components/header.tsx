@@ -46,7 +46,7 @@ export default function Header() {
 
   return (
     <header className="w-full pt-5 pb-2 sticky top-0 z-50 bg-white">
-      <div className="flex justify-between md:gap-16 px-4 md:px-32 items-center">
+      <div className="flex justify-between md:gap-16 px-6 md:px-20 lg:px-32 items-center">
         <span
           className={`${deliusUnicase.className} font-bold text-2xl underlined w-[200px] text-nowrap`}
         >
