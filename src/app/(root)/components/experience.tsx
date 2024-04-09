@@ -63,11 +63,11 @@ export default function Experience() {
       </div>
       <div className="flex flex-col justify-center items-center bg-white gap pb-2 text-white">
         <p
-          className={`${deliusUnicase.className} px-6 pb-2 text-2xl bg-black -mt-4 rounded-b-3xl`}
+          className={`${deliusUnicase.className} px-6 pb-2 md:text-2xl bg-black -mt-4 rounded-b-3xl`}
         >
           PROJECTS
         </p>
-        <i className="bi bi-files text-2xl bg-black px-6 pb-2 rounded-b-xl"></i>
+        <i className="bi bi-files md:text-2xl bg-black px-6 pb-2 rounded-b-xl"></i>
       </div>
     </div>
   );

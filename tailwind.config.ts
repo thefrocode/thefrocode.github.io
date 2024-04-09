@@ -19,6 +19,9 @@ const config: Config = {
         "leading-13": "line-height: 3.25rem",
         "leading-14": "line-height: 3.5rem",
       },
+      fontSize: {
+        "text-xxs": "0.5rem",
+      },
     },
   },
   plugins: [],

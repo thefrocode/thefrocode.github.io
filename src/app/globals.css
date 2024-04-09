@@ -215,6 +215,14 @@ Projects Section
   --slide-spacing: 1rem;
   --slide-size: 35%;
 }
+@media screen and (max-width: 768px) {
+  .embla {
+    /* Add your styles for viewport width >= 768px here */
+  --slide-height: 15rem;
+  --slide-spacing: 0.3rem;
+  --slide-size: 65%;
+  }
+}
 .embla__viewport {
   overflow: hidden;
 }
@@ -234,3 +242,7 @@ Projects Section
 .embla__slide__number {
   backface-visibility: hidden;
 }
+
+/* .text-xxs{
+  font-size: 0.5rem;
+} */

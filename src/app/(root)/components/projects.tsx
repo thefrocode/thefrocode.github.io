@@ -112,32 +112,35 @@ export default function Projects() {
     },
   ];
   return (
-    <div id="projects" className="embla flex mx-16 my-10 gap-8">
-      <button className="embla__prev w-1/6">
+    <div id="projects" className="embla flex md:mx-16 my-10 gap-2 md:gap-8">
+      <button className="embla__prev w-[25px] md:w-1/6">
         <i className="bi bi-chevron-left text-3xl" onClick={scrollPrev}></i>
       </button>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {projects.map((project, index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number flex flex-col items-center gap-6 bg-[#000000d9] rounded-3xl py-8 px-4 text-white">
+            <div className="embla__slide w-[75px] md:w-auto" key={index}>
+              <div className="embla__slide__number flex flex-col items-center gap-2 md:gap-6 bg-[#000000d9] rounded-3xl py-4 md:py-8 md:px-4 text-white">
                 <Image
                   src={`/images/${project.url}.png`}
                   alt={project.title}
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                 />
-                <p className={`${deliusUnicase.className} text-xl font-bold`}>
+                <p
+                  className={`${deliusUnicase.className} text-xs md:text-xl md:font-bold`}
+                >
                   {project.title}
                 </p>
+
                 <p
-                  className={`${deliusUnicase.className} text-sm text-center px-2`}
+                  className={`${deliusUnicase.className}  text-xxs md:text-sm text-center px-2`}
                 >
                   {project.description}
                 </p>
                 <Link
                   href={`details/${project.url}`}
-                  className={`${deliusUnicase.className} text-sm font-bold border-2 border-white rounded-md px-4 py-2`}
+                  className={`${deliusUnicase.className} text-xxs md:text-sm md:font-bold border-2 border-white rounded-md px-2 md:px-4 py-2`}
                 >
                   Learn More
                 </Link>
@@ -146,7 +149,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <button className="embla__next w-1/6" onClick={scrollNext}>
+      <button className="embla__next w-[25px] md:w-1/6" onClick={scrollNext}>
         <i className="bi bi-chevron-right text-3xl"></i>
       </button>
     </div>
