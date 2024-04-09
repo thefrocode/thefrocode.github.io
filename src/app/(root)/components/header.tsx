@@ -42,7 +42,7 @@ export function Links() {
           ></i>
         </button>
         {isExperienceMenuOpen && (
-          <div className="md:block hidden absolute top-16 -ml-4 px-4 py-2 rounded-lg shadow-dropdown">
+          <div className="md:block hidden bg-white absolute top-16 -ml-4 px-4 py-2 rounded-lg shadow-dropdown">
             <ul>
               <li>Cherehani Africa</li>
               <li>Cherehani Africa</li>

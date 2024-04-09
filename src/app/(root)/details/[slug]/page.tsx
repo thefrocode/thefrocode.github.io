@@ -45,8 +45,8 @@ export default function Page({ params }: { params: { slug: string } }) {
   const page = pages[params.slug];
   return (
     <div className="flex flex-col justify-center items-center mb-10">
-      <div className="flex my-10 w-3/4">
-        <div className="flex justify-center items-center w-1/3">
+      <div className="flex my-10 w-5/6 md:w-3/4">
+        <div className="hidden md:flex justify-center items-center w-1/3">
           <Image
             src={`/images/${params.slug}.png`}
             alt={params.slug}
@@ -62,7 +62,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
           <div className={`${montserrat.className} flex flex-col gap-4`}>
             <p className="font-semibold">TECH STACK</p>
-            <div className="grid grid-cols-5 gap-y-4 gap-x-8">
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-y-4 gap-x-8">
               {page.stack.map((stack, index) => (
                 <div
                   key={index}
@@ -81,7 +81,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
       <hr className="w-full border border-gray-200" />
-      <div className="w-3/4 f">
+      <div className="w-5/6 md:w-3/4">
         <p className="font-semibold text-2xl my-8">DESCRIPTION</p>
         {page.project_paragraphs.map((paragraph, index) => (
           <p key={index} className="text-justify my-4">
