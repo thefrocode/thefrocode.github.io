@@ -220,7 +220,7 @@ Projects Section
     /* Add your styles for viewport width >= 768px here */
   --slide-height: 15rem;
   --slide-spacing: 0.3rem;
-  --slide-size: 65%;
+  --slide-size: 60%;
   }
 }
 .embla__viewport {
@@ -243,6 +243,6 @@ Projects Section
   backface-visibility: hidden;
 }
 
-/* .text-xxs{
+.text-xxs{
   font-size: 0.5rem;
-} */
+}
