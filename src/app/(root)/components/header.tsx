@@ -33,32 +33,9 @@ export function Links() {
         <button onClick={() => scrollToSection("stack")}>STACK</button>
       </li>
       <li>
-        <button onClick={() => toggleExperienceMenu()}>
-          EXPERIENCE{" "}
-          <i
-            className={`bi ${
-              !isExperienceMenuOpen ? "bi-chevron-down" : "bi-chevron-up"
-            } text-sm`}
-          ></i>
+        <button onClick={() => scrollToSection("experience")}>
+          EXPERIENCE
         </button>
-        {isExperienceMenuOpen && (
-          <div className="md:block hidden bg-white absolute top-16 -ml-4 px-4 py-2 rounded-lg shadow-dropdown">
-            <ul>
-              <li>Cherehani Africa</li>
-              <li>Cherehani Africa</li>
-              <li>Cherehani Africa</li>
-            </ul>
-          </div>
-        )}
-        {isExperienceMenuOpen && (
-          <div className="md:hidden">
-            <ul className="ml-4 gap-4 flex flex-col mt-4">
-              <li>Cherehani Africa</li>
-              <li>Cherehani Africa</li>
-              <li>Cherehani Africa</li>
-            </ul>
-          </div>
-        )}
       </li>
       <li>
         <button onClick={() => scrollToSection("projects")}>PROJECTS</button>

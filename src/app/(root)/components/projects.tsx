@@ -87,27 +87,21 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Project 1",
+      title: "F1 Predictions",
       description:
-        "Project 1 Project 1 Project 1 Project 1 Project 1 Project 1 Project 1 Project 1",
+        "A Fantasy Formula 1 prediction game that allows players to compete against each other by predicting the outcome of each race",
       url: "project-1",
     },
     {
-      title: "Project 2",
+      title: "F1 Predictions",
       description:
-        "Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2",
+        "A Fantasy Formula 1 prediction game that allows players to compete against each other by predicting the outcome of each race",
       url: "project-1",
     },
     {
-      title: "Project 3",
+      title: "F1 Predictions",
       description:
-        "Project 3 Project 3 Project 3 Project 3 Project 3 Project 3 Project 3 Project 3",
-      url: "project-1",
-    },
-    {
-      title: "Project 4",
-      description:
-        "Project 4 Project 4 Project 4 Project 4 Project 4 Project 4 Project 4 Project 4",
+        "A Fantasy Formula 1 prediction game that allows players to compete against each other by predicting the outcome of each race",
       url: "project-1",
     },
   ];

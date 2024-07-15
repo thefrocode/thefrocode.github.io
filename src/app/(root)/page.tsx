@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <Experience />
-      <Projects />
+      {/* <Projects /> */}
     </main>
   );
 }

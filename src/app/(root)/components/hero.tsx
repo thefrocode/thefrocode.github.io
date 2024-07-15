@@ -31,9 +31,10 @@ export default function Hero() {
         id="stack"
         className={`${montserrat.className} md:w-3/4 text-sm md:text-base self-center`}
       >
-        I work with people all over the world to create tailor-made Webflow
-        experiences. I work with people all over the world to create tailor-made
-        Webflow experiences.
+        Transforming business needs into scalable solutions, I bring 5 years of
+        full-stack engineering expertise. Passionate about user-centric
+        development, I deliver high-quality software that meets both business
+        objectives and user expectations.
       </p>
     </div>
   );

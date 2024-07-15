@@ -7,12 +7,13 @@ export default function Footer() {
     }
   };
   return (
-    <footer className="flex px-4 md:px-16 py-8 bg-black text-white gap-6 md:gap-16 flex-wrap md:flex-nowrap">
+    <footer className="flex px-4 md:px-16 py-8 bg-white text-black gap-6 md:gap-16 flex-wrap md:flex-nowrap">
       <div className="flex flex-col gap-4 w-full md:w-1/2">
         <p className="md:mr-10 text-sm md:text-base">
-          Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska.
-          Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning, och
-          pesask vyfisat. Viktiga poddradio har un mad och inde.
+          Transforming business needs into scalable solutions, I bring 5 years
+          of full-stack engineering expertise. Passionate about user-centric
+          development, I deliver high-quality software that meets both business
+          objectives and user expectations.
         </p>
         <div className="flex gap-4">
           <a

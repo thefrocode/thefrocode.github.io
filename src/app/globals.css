@@ -182,7 +182,7 @@ Tech Stack Section
 }
 
 .work-experience__second{
-  top: 25%;
+  top: 50%;
 }
 .work-experience__third{
   top: 55%;
@@ -215,8 +215,8 @@ Projects Section
 .embla {
  
   --slide-height: 19rem;
-  --slide-spacing: 1rem;
-  --slide-size: 35%;
+  --slide-spacing: 2rem;
+  --slide-size: 50%;
 }
 @media screen and (max-width: 768px) {
   .embla {
