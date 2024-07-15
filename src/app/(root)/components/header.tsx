@@ -37,9 +37,9 @@ export function Links() {
           EXPERIENCE
         </button>
       </li>
-      <li>
+      {/* <li>
         <button onClick={() => scrollToSection("projects")}>PROJECTS</button>
-      </li>
+      </li> */}
     </>
   );
 }

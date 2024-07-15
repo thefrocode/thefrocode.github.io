@@ -55,12 +55,12 @@ export default function Footer() {
           >
             Experience
           </button>
-          <button
+          {/* <button
             onClick={() => scrollToSection("projects")}
             className="text-xs text-left"
           >
             Projects
-          </button>
+          </button> */}
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-sm font-semibold md:text-base md:font-bold">
