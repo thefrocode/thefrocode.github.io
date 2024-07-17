@@ -1,4 +1,5 @@
 import { Delius_Unicase } from "next/font/google";
+import Link from "next/link";
 const deliusUnicase = Delius_Unicase({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -61,7 +62,7 @@ export default function Experience() {
             <p className="text-white w-[80px]">Dec 2018</p>
             <i className="bi bi-record-circle text-white"></i>
             <hr className="w-[20px] md:w-[60px]" />
-            <div className="w-[120px] md:w-[230px] border-2 border-white  text-sm md:text-base text-white text-center py-4 rounded-lg -mr-4 md:-mr-8">
+            <div className="w-[120px] md:w-[230px] flex flex-col border-2 border-white  text-sm md:text-base text-white text-center py-4 rounded-lg -mr-4 md:-mr-8">
               <p>Lead Software Engineer</p>
               <p>Cherehani Africa</p>
               <p> 2018 - 2023</p>
@@ -75,6 +76,13 @@ export default function Experience() {
                   </span>
                 ))}
               </div>
+
+              <Link
+                href="/details/cherehani-africa "
+                className="border border-2 border-white px-2 py-1 mx-auto mt-4 w-1/4 justify-center rounded-lg text-white bg-black hover:bg-white hover:text-black"
+              >
+                More
+              </Link>
             </div>
           </div>
         </div>

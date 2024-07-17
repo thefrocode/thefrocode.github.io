@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import "bootstrap-icons/font/bootstrap-icons.css";
 export function generateStaticParams() {
-  return [{ slug: "project-1" }];
+  return [{ slug: "cherehani-africa" }];
 }
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,13 +14,13 @@ export default function Page({ params }: { params: { slug: string } }) {
       role: string;
       timeline: string;
       stack: string[];
-      project_paragraphs: string[];
+      project_paragraphs: { topic: string; content: string }[];
     };
   } = {
-    "project-1": {
+    "cherehani-africa": {
       title: "CHEREHANI AFRICA",
       role: "LEAD SOFTWARE ENGINEER",
-      timeline: "DEC 2018 - DEC 2020; JAN 2022 - JUL 2023",
+      timeline: "DEC 2018 - AUG 2023",
       stack: [
         "Angular",
         "Node.js",
@@ -34,10 +34,47 @@ export default function Page({ params }: { params: { slug: string } }) {
         "Codeigniter",
       ],
       project_paragraphs: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        {
+          topic: "Key Contributor to Loan Management System Development",
+          content:
+            "Joined the team to build the Loan Management System from the ground up, playing an integral role in its design and development.",
+        },
+        {
+          topic: "Integration with Daraja APIs",
+          content:
+            "Expertly utilized Daraja APIs (B2C and C2B) to streamline capital disbursement and payment receipt processes, ensuring smooth financial transactions.",
+        },
+
+        {
+          topic: "CRM Evolution and Optimization",
+          content:
+            "Spearheaded multiple iterations of the CRM, including a strategic migration to a mono repo for enhanced code reusability and the creation of tailored dashboards, improving overall system performance and user experience.",
+        },
+        {
+          topic: "Business and Tech Alignment",
+          content:
+            "Acted as the essential liaison between business and tech teams, ensuring seamless alignment of tech work with business needs to achieve business goals while enabling the tech team to effectively manage its internal tasks.",
+        },
+        {
+          topic: "Sprint Planning and Integration",
+          content:
+            "Planned sprints by merging business requirements, internal tech tasks, and customer feedback collected through the field team, ensuring a balanced and responsive development cycle.",
+        },
+        {
+          topic: "Mentorship and Team Development",
+          content:
+            "Mentored newly joined engineers, fostering their growth and integration into the team, and contributing to a collaborative and high-performing work environment.",
+        },
+        {
+          topic: "Dashboard Creation",
+          content:
+            "Led the creation of intuitive and data-driven dashboards for various departments, including the field and collections teams, and the finance team, significantly improving operational efficiency and data visibility.",
+        },
+        {
+          topic: "Azure Ecosystem Utilization",
+          content:
+            "Leveraged the robust Azure ecosystem to ensure high reliability and availability of the CRM, providing a solid foundation for the company's technological infrastructure.",
+        },
       ],
     },
   };
@@ -50,8 +87,8 @@ export default function Page({ params }: { params: { slug: string } }) {
           <Image
             src={`/images/${params.slug}.png`}
             alt={params.slug}
-            width={130}
-            height={130}
+            width={200}
+            height={200}
           />
         </div>
         <div className="flex flex-col gap-8">
@@ -85,10 +122,12 @@ export default function Page({ params }: { params: { slug: string } }) {
         <p className="font-semibold text-2xl my-8">DESCRIPTION</p>
         {page.project_paragraphs.map((paragraph, index) => (
           <p key={index} className="text-justify my-4">
-            {paragraph}
+            <span className="font-bold">{paragraph.topic}: </span>
+            {paragraph.content}
           </p>
         ))}
       </div>
+      <hr className="w-full border border-gray-200" />
     </div>
   );
 }
